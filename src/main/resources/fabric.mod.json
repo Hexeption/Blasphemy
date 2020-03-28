@@ -18,6 +18,9 @@
   "entrypoints": {
     "main": [
       "uk.co.hexeption.blasphemy.Blasphemy"
+    ],
+    "client": [
+      "uk.co.hexeption.blasphemy.BlasphemyClient"
     ]
   },
   "mixins": [
