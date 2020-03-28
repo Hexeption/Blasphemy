@@ -14,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 public class Blasphemy implements ModInitializer {
 
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
-        new Identifier("Blasphemy", "general"),
+        new Identifier("blasphemy", "general"),
         () -> new ItemStack(Blocks.COBBLESTONE));
 
     @Override
