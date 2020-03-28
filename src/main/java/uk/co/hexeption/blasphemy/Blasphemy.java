@@ -10,15 +10,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import uk.co.hexeption.blasphemy.init.ModItems;
 
 public class Blasphemy implements ModInitializer {
 
-    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
-        new Identifier("blasphemy", "general"),
-        () -> new ItemStack(Blocks.COBBLESTONE));
 
     @Override
     public void onInitialize() {
-        Registry.register(Registry.ITEM, new Identifier("blasphemy", "wand"), new Item(new Settings().group(ITEM_GROUP)));
+        ModItems.register();
     }
 }
